@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚽ FUTBOL OYUNU ⚽</h1>
+        
+        <div class="score-board">
+            <div class="team team-1">
+                <h2>TEAM 1</h2>
+                <div class="score" id="score1">0</div>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team team-2">
+                <h2>TEAM 2</h2>
+                <div class="score" id="score2">0</div>
+            </div>
+        </div>
+
+        <div class="game-info">
+            <p>👆 Akıllı tahtada oynamak için ekrana dokunun</p>
+            <p>Oyuncu 1: WASD tuşları veya dokunmatik</p>
+            <p>Oyuncu 2: YUKARIKALTIN tuşları veya dokunmatik</p>
+        </div>
+
+        <canvas id="gameCanvas" width="1200" height="600"></canvas>
+
+        <div class="controls">
+            <button id="startBtn">🎮 OYUNU BAŞLAT</button>
+            <button id="resetBtn">🔄 SIFIRLAMA</button>
+        </div>
+
+        <div class="legend">
+            <p>🔵 = Oyuncu 1 (Team 1) | 🔴 = Oyuncu 2 (Team 2) | ⚽ = Top</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
